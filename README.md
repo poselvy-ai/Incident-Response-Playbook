@@ -69,7 +69,7 @@ Pre-built communication formats for customer updates, leadership notifications, 
 ### **Incident Scenarios**
 Example incidents used for training, simulation, and operational readiness.
 
-➡️ [Incident Scenarios](incident-scenarios/)
+➡️ [Incident Scenarios](Incident-Scenarios/)
 
 ---
 
