@@ -1,6 +1,5 @@
 # Root Cause Analysis (RCA) Template
-
-This template documents major incidents (SEV-2, SEV-3, SEV-4) in mission-critical environments.
+This template documents major incidents (SEV-2, SEV-3, SEV-4) in mission‑critical environments.
 
 ---
 
@@ -15,6 +14,7 @@ This template documents major incidents (SEV-2, SEV-3, SEV-4) in mission-critica
 ---
 
 ## 2. Timeline of Events
+
 | Time | Event |
 |------|--------|
 | HH:MM | Detection |
@@ -26,9 +26,14 @@ This template documents major incidents (SEV-2, SEV-3, SEV-4) in mission-critica
 ---
 
 ## 3. Impact Analysis
-- User Impact  
-- System Impact  
-- Business Impact  
+### User Impact
+- 
+
+### System Impact
+- 
+
+### Business Impact
+- 
 
 ---
 
@@ -38,21 +43,26 @@ Describe the underlying cause.
 ---
 
 ## 5. Contributing Factors
-List secondary issues.
+- 
 
 ---
 
 ## 6. Detection & Monitoring Review
-- How detected  
-- Monitoring gaps  
-- Required improvements  
+**How detected:**  
+**Monitoring gaps:**  
+**Required improvements:**  
 
 ---
 
 ## 7. Response Analysis
-- What went well  
-- What went poorly  
-- Bridge management review  
+### What went well
+- 
+
+### What went poorly
+- 
+
+### Bridge management review
+- 
 
 ---
 
@@ -67,19 +77,23 @@ Describe how recurrence will be prevented.
 ---
 
 ## 10. Lessons Learned
-Key takeaways.
+- 
 
 ---
 
 ## 11. Action Items & Owners
+
 | Action Item | Owner | Due Date | Status | Closure Date |
 |-------------|--------|----------|--------|--------------|
+|             |        |          |        |              |
 
 ---
 
 ## 12. Customer Communications Review (Last 90 Days)
+
 | Date | Incident | Severity | Customer Impact | Notes |
 |------|----------|----------|------------------|-------|
+|      |          |          |                  |       |
 
 ---
 
