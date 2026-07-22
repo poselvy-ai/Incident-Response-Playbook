@@ -1,4 +1,4 @@
-# [Escalation Workflow](diagram/Escalation-Workflow-Diagram.png)
+# [Escalation Workflow](diagram/Life-Cycle-Diagram.png)
 
 This workflow defines how incidents are escalated across the organization based on severity, business impact, urgency, and customer impact. It ensures consistent, disciplined, and enterprise-grade incident management.
 
