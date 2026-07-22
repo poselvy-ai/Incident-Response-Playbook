@@ -18,7 +18,7 @@ Once detected, the responder performs an **initial assessment** and classifies s
 
 ---
 
-# 2. [Severity Classification](severity-matrix.png)  (Using Severity Matrix)
+# 2. [Severity Classification](diagrams/severity-matrix.png)  (Using Severity Matrix)
 
 Severity is determined by:
 - **Impact** (None, Low, Moderate, High)
