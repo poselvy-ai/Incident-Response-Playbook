@@ -18,7 +18,7 @@ Once detected, the responder performs an **initial assessment** and classifies s
 
 ---
 
-# 2. Severity Classification (Using Severity Matrix)
+# 2. [Severity Classification](severity-matrix.png)  (Using Severity Matrix)
 
 Severity is determined by:
 - **Impact** (None, Low, Moderate, High)
@@ -35,7 +35,7 @@ Severity determines escalation path, communication cadence, and bridge activatio
 
 ---
 
-# 3. Escalation Triggers (By Severity Level)
+# 3. [Escalation Triggers](diagrams/escalation-path%20Diagram.png) (By Severity Level)
 
 ## **SEV-1 — Minor Issue**
 - Assigned to L1 or single technical team  
