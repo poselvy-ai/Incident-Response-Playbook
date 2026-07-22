@@ -4,7 +4,7 @@ This Severity Matrix is used to classify incidents consistently across the organ
 
 ---
 
-# 1. [Severity Matrix Grid](severity-matrix.png ) 
+# 1. [Severity Matrix Grid](diagrams/severity-matrix.png ) 
 
 | Urgency \ Impact | None | Low | Moderate | High |
 |------------------|------|-----|----------|------|
