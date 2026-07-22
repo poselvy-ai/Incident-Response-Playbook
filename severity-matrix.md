@@ -4,7 +4,7 @@ This Severity Matrix is used to classify incidents consistently across the organ
 
 ---
 
-# 1. Severity Matrix Grid
+# 1. [Severity Matrix Grid](severity-matrix.png ) 
 
 | Urgency \ Impact | None | Low | Moderate | High |
 |------------------|------|-----|----------|------|
@@ -114,8 +114,3 @@ This makes the matrix visually intuitive and easy to scan during an incident.
 
 6. After resolution, complete RCA  
    - SEV-3 and SEV-4 require full RCA  
-
----
-
-# 6. Optional Legend (If You Want Descriptive Labels)
-
