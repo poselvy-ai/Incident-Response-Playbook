@@ -102,6 +102,3 @@ Actions:
 - No data integrity issues reported
 - FINCO service restored
 
----
-
-## Executive Communication (Your Action)
