@@ -34,7 +34,7 @@ Used during initial assessment to classify incidents.
 ### **Escalation Workflow (Swim Lanes)**
 Shows **who** is involved at each severity level and **what actions** they take.
 
-➡️ [Escalation Workflow](escalation-workflow.md)
+➡️ [Escalation Workflow](Escalation-workflow.md)
 
 ---
 
@@ -55,14 +55,14 @@ Shows the **end-to-end journey** of an incident from detection → closure → R
 ### **RCA Template**
 Standardized format for documenting root cause, contributing factors, corrective actions, and preventive measures.
 
-➡️ [RCA Template](rca-template.md)
+➡️ [RCA Template](RCA-Template.md)
 
 ---
 
 ### **Communication Templates**
 Pre-built communication formats for customer updates, leadership notifications, and bridge announcements.
 
-➡️ [Communication Templates](communication-templates.md)
+➡️ [Communication Templates](Communication-Template.md)
 
 ---
 
@@ -127,9 +127,9 @@ Full details:
 
 - **Start Here:** [Severity Matrix](severity-matrix.md)  
 - **Escalation Logic:** [Escalation Path Diagram](diagrams/Esclation-Worflow-Diagram.png)  
-- **Roles & Responsibilities:** [Escalation Workflow](escalation-workflow.md)  
+- **Roles & Responsibilities:** [Escalation Workflow](Escalation-workflow.md)  
 - **End-to-End Flow:** [Incident Lifecycle Diagram](diagrams/Incident-Lifecycle.png)  
-- **Post-Incident:** [RCA Template](rca-template.md)
+- **Post-Incident:** [RCA Template](RCA-Template.md)
 
 ---
 
