@@ -1,4 +1,4 @@
-# Scenario 3 — Application/API Outage (SEV‑4 → SEV‑2)
+#Application/API Outage (SEV‑4 → SEV‑2)
 Summary based on OP Lead decisions and incident actions
 
 ---
