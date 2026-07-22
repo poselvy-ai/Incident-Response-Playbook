@@ -48,7 +48,7 @@ Shows **how severity changes** over time based on worsening, SLA risk, reputatio
 ### **Incident Lifecycle Diagram**
 Shows the **end-to-end journey** of an incident from detection → closure → RCA.
 
-➡️ [Incident Lifecycle Diagram](diagrams/Incident-Lifecycle.png)
+➡️ [Incident Lifecycle Diagram](diagrams/Life-Cycle-Diagram.png)
 
 ---
 
