@@ -1,4 +1,4 @@
-# Escalation Workflow
+# [Escalation Workflow](diagram/Escalation-Workflow-Diagram.png)
 
 This workflow defines how incidents are escalated across the organization based on severity, business impact, urgency, and customer impact. It ensures consistent, disciplined, and enterprise-grade incident management.
 
@@ -101,7 +101,7 @@ Bridge remains active until:
 | SEV-3 | 15 min | All teams, leadership, support |
 | SEV-4 | 10 min | All teams, leadership, executives, compliance |
 
-Communication templates must be used for:
+[Communication templates](Communication-Template.md) must be used for:
 - Initial notification  
 - Bridge initiation  
 - Status updates  
@@ -185,7 +185,7 @@ IC declares the incident closed.
 | SEV-3 | Required |
 | SEV-4 | Mandatory (executive review) |
 
-RCA must follow the **RCA Template** and include:
+RCA must follow the [**RCA Template**](RCA-Template.md) and include:
 - Timeline  
 - Root cause  
 - Contributing factors  
