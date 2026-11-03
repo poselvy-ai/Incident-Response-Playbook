@@ -41,14 +41,14 @@ Shows **who** is involved at each severity level and **what actions** they take.
 ### **Escalation Path Diagram**
 Shows **how severity changes** over time based on worsening, SLA risk, reputation/compliance risk, improvement, and resolution.
 
-➡️ [Escalation Path Diagram](diagrams/Esclation-Worflow-Diagram.png)
+➡️ [Escalation Path Diagram](diagrams/Escalation-Workflow-Diagram.png)
 
 ---
 
 ### **Incident Lifecycle Diagram**
 Shows the **end-to-end journey** of an incident from detection → closure → RCA.
 
-➡️ [Incident Lifecycle Diagram](diagrams/Life-Cycle-Diagram.png)
+➡️ [Incident Lifecycle Diagram](diagrams/Incident-Lifecycle-Diagram.png)
 
 ---
 
@@ -126,9 +126,9 @@ Full details:
 ## 🧭 Navigation
 
 - **Start Here:** [Severity Matrix](severity-matrix.md)  
-- **Escalation Logic:** [Escalation Path Diagram](diagrams/Esclation-Worflow-Diagram.png)  
+- **Escalation Logic:** [Escalation Path Diagram](diagrams/Escalation-Workflow-Diagram.png)  
 - **Roles & Responsibilities:** [Escalation Workflow](Escalation-workflow.md)  
-- **End-to-End Flow:** [Incident Lifecycle Diagram](diagrams/Incident-Lifecycle.png)  
+- **End-to-End Flow:** [Incident Lifecycle Diagram](diagrams/Incident-Lifecycle-Diagram.png)  
 - **Post-Incident:** [RCA Template](RCA-Template.md)
 
 ---

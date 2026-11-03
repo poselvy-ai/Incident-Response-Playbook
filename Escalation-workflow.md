@@ -1,4 +1,4 @@
-# [Escalation Workflow](diagrams/Life-Cycle-Diagram.png)
+# [Escalation Workflow](diagrams/Incident-Lifecycle-Diagram.png)
 
 This workflow defines how incidents are escalated across the organization based on severity, business impact, urgency, and customer impact. It ensures consistent, disciplined, and enterprise-grade incident management.
 
@@ -35,7 +35,7 @@ Severity determines escalation path, communication cadence, and bridge activatio
 
 ---
 
-# 3. [Escalation Triggers](diagrams/escalation-path%20Diagram.png) (By Severity Level)
+# 3. [Escalation Triggers](diagrams/escalation-path-diagram.png) (By Severity Level)
 
 ## **SEV-1 — Minor Issue**
 - Assigned to L1 or single technical team  
