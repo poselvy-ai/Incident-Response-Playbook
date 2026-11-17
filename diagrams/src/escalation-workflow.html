@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+body{margin:0;padding:24px;background:#fff;font-family:Arial,Helvetica,sans-serif}
+h1{font-size:22px;margin:0 0 12px}
+table{border-collapse:collapse;table-layout:fixed;width:1100px}
+th,td{border:1px solid #333;padding:8px;vertical-align:top;font-size:14px;line-height:1.35}
+th{background:#f3f3f3;font-size:15px}td.step{background:#fafafa;font-weight:bold;width:150px}
+.s1{background:#E06666}.s2{background:#F4B183}.s3{background:#FFD966}.s4{background:#A8D08D}.s5{background:#D9D9D9}
+b{display:block;margin-bottom:2px}
+</style></head><body id="cap">
+<h1>Escalation Workflow by Role (SEV-1 = most severe)</h1>
+<table>
+<tr><th style="width:150px">Stage</th><th>L1 / Responder</th><th>Ops Lead</th><th>Tech Leads</th><th>Incident Commander</th><th>Leadership</th></tr>
+<tr><td class="step">Detection</td><td>Monitoring, alerts, user reports</td><td></td><td></td><td></td><td></td></tr>
+<tr><td class="step">Initial assessment</td><td>Impact &amp; urgency → Severity Matrix</td><td></td><td></td><td></td><td></td></tr>
+<tr><td class="step">SEV-5 Informational</td><td class="s5"><b>SEV-5</b>Log and monitor only</td><td></td><td></td><td></td><td></td></tr>
+<tr><td class="step">SEV-4 Minor</td><td class="s4"><b>SEV-4</b>L1 handles · No bridge · Updates as needed</td><td></td><td></td><td></td><td></td></tr>
+<tr><td class="step">SEV-3 Moderate</td><td></td><td class="s3"><b>SEV-3</b>Ops Lead engaged · Tech teams looped in · 30-min updates</td><td class="s3"><b>SEV-3</b>Troubleshooting · Deep dive</td><td></td><td></td></tr>
+<tr><td class="step">SEV-2 Major</td><td></td><td></td><td class="s2"><b>SEV-2</b>All relevant teams paged</td><td class="s2"><b>SEV-2</b>Bridge activated · IC assigned · 15-min updates</td><td class="s2"><b>SEV-2</b>Leadership notified</td></tr>
+<tr><td class="step">SEV-1 Critical</td><td></td><td></td><td class="s1"><b>SEV-1</b>All teams paged</td><td class="s1"><b>SEV-1</b>Full bridge · IC + Deputy IC · 10-min updates</td><td class="s1"><b>SEV-1</b>Executives + Compliance notified</td></tr>
+<tr><td class="step">Bridge roles (SEV-1/2)</td><td></td><td></td><td>Tech leads report status</td><td>IC · Deputy IC · Scribe</td><td>Customer Support · Leadership updates</td></tr>
+<tr><td class="step">Monitor inputs</td><td colspan="5">System teams, alerts, customers, teams → escalate, de-escalate or maintain severity</td></tr>
+<tr><td class="step">Resolution</td><td colspan="5">Fix applied · Stability verified · Customers and leadership notified · IC declares closure</td></tr>
+<tr><td class="step">RCA</td><td colspan="2">SEV-3: optional · SEV-4/5: not required</td><td></td><td colspan="2">SEV-2: required · SEV-1: mandatory with executive review</td></tr>
+</table></body></html>

@@ -1,5 +1,7 @@
+[← Back to README](README.md)
+
 # Root Cause Analysis (RCA) Template
-This template documents major incidents (SEV-2, SEV-3, SEV-4) in mission‑critical environments.
+This template documents incidents that need a root cause analysis in mission-critical environments: **required for SEV-1 and SEV-2**, optional for SEV-3 (see the [Severity Matrix](Severity-Matrix.md)).
 
 ---
 
@@ -7,7 +9,7 @@ This template documents major incidents (SEV-2, SEV-3, SEV-4) in mission‑criti
 **Date:**  
 **Start Time:**  
 **End Time:**  
-**Severity:**  
+**Severity (SEV-1 to SEV-5):**  
 **Systems Impacted:**  
 **Business Impact Summary:**  
 
@@ -113,4 +115,8 @@ Attach logs, screenshots, graphs, etc.
 ---
 
 ## 16. Closure Date
-**RCA Closure Date:**  
+**RCA Closure Date:**
+
+---
+
+[← Back to README](README.md)

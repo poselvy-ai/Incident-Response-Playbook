@@ -1,10 +1,12 @@
-VDI Broker Failure (SEV‑2 → SEV‑1)
+[← Back to README](../README.md)
+
+# VDI Broker Failure (SEV-3 → SEV-4)
 Summary based on OP Lead decisions and incident actions
 
 ---
 
 ## Executive Summary
-A VDI login outage impacted Region A due to degraded authentication dependency paths between DC1 and the identity service. The issue was traced to intermittent packet loss on DC1 Uplink 2, causing VDI brokers to fail dependency checks and preventing user authentication. The OP Lead maintained SEV‑2, coordinated diagnostics across Networking, VDI, Identity, DevOps, and Customer Support, and executed a two‑phase mitigation: immediate reroute to Uplink 1 and permanent optic replacement on Uplink 2. Service fully recovered and the incident was de‑escalated to SEV‑1. No RCA was requested.
+A VDI login outage impacted Region A due to degraded authentication dependency paths between DC1 and the identity service. The issue was traced to intermittent packet loss on DC1 Uplink 2, causing VDI brokers to fail dependency checks and preventing user authentication. The OP Lead maintained SEV-3, coordinated diagnostics across Networking, VDI, Identity, DevOps, and Customer Support, and executed a two-phase mitigation: immediate reroute to Uplink 1 and permanent optic replacement on Uplink 2. Service fully recovered and the incident was de-escalated to SEV-4. No RCA was requested.
 
 ---
 
@@ -19,7 +21,7 @@ A VDI login outage impacted Region A due to degraded authentication dependency p
 ---
 
 ## Initial Actions (OP Lead)
-- Declared **SEV‑2**  
+- Declared **SEV-3**  
 - Notified all Technical Leads (Networking, VDI, Identity, DevOps)  
 - Issued initial customer communication acknowledging investigation  
 - Directed Networking to perform deeper diagnostics  
@@ -32,7 +34,7 @@ A VDI login outage impacted Region A due to degraded authentication dependency p
 ### Networking
 - Packet loss increasing (8–12% → 18–22%)  
 - Intermittent CRC errors on **Uplink 2**  
-- Optic showing light‑level fluctuation  
+- Optic showing light-level fluctuation  
 - Root cause identified as **DC1 uplink degradation**
 
 ### VDI
@@ -48,7 +50,7 @@ A VDI login outage impacted Region A due to degraded authentication dependency p
 
 ### DevOps
 - VDI pool health dropping (40% → 30%)  
-- No cloud‑side issues  
+- No cloud-side issues  
 - Connection Server slow due to upstream path instability
 
 ### Customer Support
@@ -74,15 +76,15 @@ A VDI login outage impacted Region A due to degraded authentication dependency p
 - Dispatch DC Ops technician  
 - Replace degraded optic on Uplink 2  
 - Validate light levels and error counters  
-- Confirm long‑term stability
+- Confirm long-term stability
 
 ---
 
-## De‑escalation
+## De-escalation
 - Service stabilized and fully recovered  
 - Coordinated DC Ops technician with IT Ops 1 for final repairs  
 - Customer Support confirmed recovery  
-- Incident de‑escalated to **SEV‑1**  
+- Incident de-escalated to **SEV-4**  
 - Continued monitoring until optic replacement validated  
 - **No RCA requested**
 
@@ -94,4 +96,8 @@ A VDI login outage impacted Region A due to degraded authentication dependency p
 - DC1 uplink permanently repaired  
 - All teams confirmed operational health  
 - Customer sentiment positive  
-- Incident closed at SEV‑1
+- Incident closed at SEV-4
+
+---
+
+[← Back to Incident Scenarios](README.md) · [← Back to README](../README.md)

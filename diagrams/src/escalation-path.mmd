@@ -1,0 +1,31 @@
+flowchart TD
+    A([Incident]) --> B[Initial assessment]
+    B --> C{Severity Matrix<br/>impact × urgency}
+    C --> S1["SEV-1 Critical<br/>Full bridge · IC + Deputy IC<br/>Exec + Compliance · 10 min"]
+    C --> S2["SEV-2 Major<br/>Bridge · IC assigned<br/>Leadership · 15 min"]
+    C --> S3["SEV-3 Moderate<br/>Ops Lead + tech teams<br/>30 min"]
+    C --> S4["SEV-4 Minor<br/>Single technician"]
+    C --> S5["SEV-5 Informational<br/>Monitoring only"]
+    S1 & S2 & S3 & S4 & S5 --> D[/Check inputs: metrics,<br/>dashboards, teams, customers/]
+    D --> E{Resolved?}
+    E -- No --> G{Worsening, SLA risk,<br/>reputation or compliance?}
+    G -- Yes --> H[Escalate:<br/>move to a LOWER SEV number]
+    G -- No --> I{Improving?}
+    I -- Yes --> J[De-escalate:<br/>move to a HIGHER SEV number]
+    I -- No --> K[Maintain severity]
+    H & J & K -. re-check .-> D
+    E -- Yes --> F[Close incident]
+    F --> R{SEV-1 or SEV-2?}
+    R -- Yes --> RCA[RCA required]
+    R -- No --> N[RCA optional / not required]
+
+    classDef s1 fill:#E06666,stroke:#333,color:#000
+    classDef s2 fill:#F4B183,stroke:#333,color:#000
+    classDef s3 fill:#FFD966,stroke:#333,color:#000
+    classDef s4 fill:#A8D08D,stroke:#333,color:#000
+    classDef s5 fill:#D9D9D9,stroke:#333,color:#000
+    class S1 s1
+    class S2 s2
+    class S3 s3
+    class S4 s4
+    class S5 s5

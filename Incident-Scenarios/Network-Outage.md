@@ -1,3 +1,5 @@
+[← Back to README](../README.md)
+
 # Network Outage Scenario — DC1 Core Switch Failure  
 Acme Company — July 21, 2026
 
@@ -7,9 +9,9 @@ This scenario provides a concise, professional incident walkthrough suitable for
 
 ## 1. Executive Summary
 
-On July 21, 2026, Acme Company experienced a major outage in Data Center 1 (DC1) beginning at **09:12 AM PDT**. A thermal event in Rack R14 caused failure of the **core switch**, **two power supplies**, and **cooling unit CU‑3**, resulting in widespread service disruption across internal applications, VDI, external customer services, and cloud connectivity.
+On July 21, 2026, Acme Company experienced a major outage in Data Center 1 (DC1) beginning at **09:12 AM PDT**. A thermal event in Rack R14 caused failure of the **core switch**, **two power supplies**, and **cooling unit CU-3**, resulting in widespread service disruption across internal applications, VDI, external customer services, and cloud connectivity.
 
-The incident escalated from **SEV‑3 → SEV‑4** due to business impact, customer escalation, and failure of automatic failover. Full restoration was achieved by **11:20 AM PDT** after replacing the core switch and associated hardware.
+The incident escalated from **SEV-2 → SEV-1** due to business impact, customer escalation, and failure of automatic failover. Full restoration was achieved by **11:20 AM PDT** after replacing the core switch and associated hardware.
 
 ---
 
@@ -42,7 +44,7 @@ At **09:12 AM**, multiple monitoring systems reported:
 - VPN concentrator reporting “no upstream gateway”  
 - Service desk reporting widespread user outages  
 
-Initial severity: **SEV‑3**
+Initial severity: **SEV-2**
 
 ---
 
@@ -51,15 +53,15 @@ Initial severity: **SEV‑3**
 | Time   | Action                                                |
 |--------|--------------------------------------------------------|
 | 09:12  | Detection — monitoring alerts + user reports          |
-| 09:20  | Escalated to SEV‑3                                    |
+| 09:20  | Escalated to SEV-2                                    |
 | 09:25  | Bridge opened — Networking, DC Ops, DevOps, VDI, CS   |
 | 09:40  | DC Ops confirms thermal event in Rack R14             |
 | 09:45  | Networking identifies corrupted STP/BGP packets       |
 | 10:00  | Power cycle attempted — partial stabilization         |
-| 10:00  | Escalated to SEV‑4 due to business impact             |
+| 10:00  | Escalated to SEV-1 due to business impact             |
 | 10:20  | Executive approval for hardware replacement           |
-| 10:25  | Replacement of core switch + PSUs + CU‑3 begins       |
-| 11:20  | Full restoration — de-escalated to SEV‑1              |
+| 10:25  | Replacement of core switch + PSUs + CU-3 begins       |
+| 11:20  | Full restoration — de-escalated to SEV-4              |
 
 ---
 
@@ -67,13 +69,13 @@ Initial severity: **SEV‑3**
 
 ### Thermal Event
 - Rack R14 temperature **20°F above normal**  
-- Cooling unit CU‑3 compressor failure  
+- Cooling unit CU-3 compressor failure  
 - Core switch overheating  
 
 ### Hardware Failures
 - PSU1: critical fault  
 - PSU2: warning state  
-- CU‑3: offline  
+- CU-3: offline  
 - Core switch: sending corrupted STP/BGP packets  
 
 ### Network Behavior
@@ -97,7 +99,7 @@ Initial severity: **SEV‑3**
 - Stabilization confidence: **20–30%**  
 - Replacement ETA: **~55 minutes**  
 - Risk of refailure high  
-- **Decision:** Replace core switch + PSUs + CU‑3
+- **Decision:** Replace core switch + PSUs + CU-3
 
 ### Customer & Compliance
 - SLA breach confirmed at **10:42 AM**  
@@ -113,7 +115,7 @@ Hardware replaced:
 - Core Switch DC1CSW01  
 - PSU1  
 - PSU2  
-- Cooling Unit CU‑3  
+- Cooling Unit CU-3  
 
 Post-repair actions:
 - Routing tables rebuilt  
@@ -124,7 +126,7 @@ Post-repair actions:
 - Customer services fully operational  
 
 **Full restoration achieved at 11:20 AM.**  
-Incident de-escalated to **SEV‑1** and assigned to IT Ops for closeout.
+Incident de-escalated to **SEV-4** and assigned to IT Ops for closeout.
 
 ---
 
@@ -143,4 +145,8 @@ Incident de-escalated to **SEV‑1** and assigned to IT Ops for closeout.
 - Failover logic failed due to corrupted control-plane traffic  
 - VDI dependency on DC1 created a single point of failure  
 - Customer communication cadence stabilized sentiment  
-- Early leadership involvement reduced enterprise escalation pressure  
+- Early leadership involvement reduced enterprise escalation pressure
+
+---
+
+[← Back to Incident Scenarios](README.md) · [← Back to README](../README.md)

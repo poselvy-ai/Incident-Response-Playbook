@@ -10,45 +10,45 @@ It provides a structured, repeatable, and auditable approach to incident detecti
 
 This playbook demonstrates:
 
-- Operational maturity  
-- Escalation discipline  
-- Clear communication standards  
-- Leadership and compliance alignment  
-- Customer-impact awareness  
-- Structured incident command behavior  
+- Operational maturity
+- Escalation discipline
+- Clear communication standards
+- Leadership and compliance alignment
+- Customer-impact awareness
+- Structured incident command behavior
 
-It is designed for SEV-0 through SEV-4 incidents and supports both technical and leadership teams.
+It covers **SEV-1 (critical) through SEV-5 (informational)** incidents and supports both technical and leadership teams. **Lower number = more severe**, matching industry convention and ITIL priorities P1–P5.
 
 ---
 
 ## 📁 Repository Structure
 
 ### **Severity Matrix**
-Defines SEV-0 through SEV-4 based on **Impact × Urgency**.  
+Defines SEV-1 through SEV-5 based on **Impact × Urgency**, with the ITIL P1–P5 mapping.
 Used during initial assessment to classify incidents.
 
-➡️ [Severity Matrix](severity-matrix.md)
+➡️ [Severity Matrix](Severity-Matrix.md)
 
 ---
 
 ### **Escalation Workflow (Swim Lanes)**
 Shows **who** is involved at each severity level and **what actions** they take.
 
-➡️ [Escalation Workflow](Escalation-workflow.md)
+➡️ [Escalation Workflow](Escalation-Workflow.md) · [Swimlane diagram](diagrams/escalation-workflow.png)
 
 ---
 
 ### **Escalation Path Diagram**
 Shows **how severity changes** over time based on worsening, SLA risk, reputation/compliance risk, improvement, and resolution.
 
-➡️ [Escalation Path Diagram](diagrams/Escalation-Workflow-Diagram.png)
+➡️ [Escalation Path Diagram](diagrams/escalation-path.png)
 
 ---
 
 ### **Incident Lifecycle Diagram**
 Shows the **end-to-end journey** of an incident from detection → closure → RCA.
 
-➡️ [Incident Lifecycle Diagram](diagrams/Incident-Lifecycle-Diagram.png)
+➡️ [Incident Lifecycle Diagram](diagrams/incident-lifecycle.png)
 
 ---
 
@@ -69,7 +69,12 @@ Pre-built communication formats for customer updates, leadership notifications, 
 ### **Incident Scenarios**
 Example incidents used for training, simulation, and operational readiness.
 
-➡️ [Incident Scenarios](Incident-Scenarios/)
+➡️ [Incident Scenarios](Incident-Scenarios/README.md)
+
+---
+
+### **Diagram Sources**
+Every diagram is generated from a text source in [`diagrams/src/`](diagrams/src/) (Mermaid and HTML), so it can be edited and re-rendered.
 
 ---
 
@@ -79,13 +84,13 @@ Example incidents used for training, simulation, and operational readiness.
 Monitoring, alerts, customer reports, or manual observation.
 
 ### **2. Log and Categorize**
-Create the incident record and assign initial category.
+Create the incident record and assign an initial category.
 
 ### **3. Assess Impact + Urgency**
-Use the Severity Matrix to determine SEV-0 → SEV-4.
+Use the Severity Matrix to determine SEV-1 → SEV-5.
 
 ### **4. Follow the Workflow**
-Use the Escalation Workflow Diagram to understand roles and actions.
+Use the Escalation Workflow to understand roles and actions.
 
 ### **5. Follow the Escalation Path**
 Determine whether to escalate, de-escalate, or maintain severity.
@@ -97,50 +102,60 @@ Apply mitigation, restore service, confirm stability.
 Notify stakeholders and update documentation.
 
 ### **8. Perform RCA (if required)**
-Mandatory for SEV-3 and SEV-4.
+Mandatory for SEV-1 and SEV-2.
 
 ---
 
 ## 📊 Severity Levels (Summary)
 
-| Severity | Description | RCA |
-|---------|-------------|-----|
-| **SEV‑0** | Monitoring Only | No |
-| **SEV‑1** | Single Technician Assigned | No |
-| **SEV‑2** | Ops Lead + Tech Teams | No |
-| **SEV‑3** | Bridge + IC Assigned | Yes |
-| **SEV‑4** | Full Bridge + Exec + Compliance | Yes |
+| Severity | ITIL | Description | Response | RCA |
+|----------|------|-------------|----------|-----|
+| **SEV-1** | P1 | Critical | Full bridge + IC/Deputy IC + Exec + Compliance, 10-min updates | Mandatory (exec review) |
+| **SEV-2** | P2 | Major | Bridge + IC assigned, 15-min updates | Required |
+| **SEV-3** | P3 | Moderate | Ops Lead + tech teams, 30-min updates | Optional |
+| **SEV-4** | P4 | Minor | Single technician / L1 | No |
+| **SEV-5** | P5 | Informational | Monitoring only | No |
 
-Full details:  
-➡️ [Severity Matrix](severity-matrix.md)
+Full details:
+➡️ [Severity Matrix](Severity-Matrix.md)
 
 ---
 
 ## 📘 RCA Requirements
 
-- **SEV‑3 and SEV‑4:** Mandatory RCA  
-- **SEV‑0, SEV‑1, SEV‑2:** Optional RCA (based on impact or leadership request)
+- **SEV-1:** Mandatory RCA with executive review
+- **SEV-2:** RCA required
+- **SEV-3:** Optional (based on impact or leadership request)
+- **SEV-4, SEV-5:** Not required
 
 ---
 
 ## 🧭 Navigation
 
-- **Start Here:** [Severity Matrix](severity-matrix.md)  
-- **Escalation Logic:** [Escalation Path Diagram](diagrams/Escalation-Workflow-Diagram.png)  
-- **Roles & Responsibilities:** [Escalation Workflow](Escalation-workflow.md)  
-- **End-to-End Flow:** [Incident Lifecycle Diagram](diagrams/Incident-Lifecycle-Diagram.png)  
+- **Start Here:** [Severity Matrix](Severity-Matrix.md)
+- **Escalation Logic:** [Escalation Path Diagram](diagrams/escalation-path.png)
+- **Roles & Responsibilities:** [Escalation Workflow](Escalation-Workflow.md)
+- **End-to-End Flow:** [Incident Lifecycle Diagram](diagrams/incident-lifecycle.png)
 - **Post-Incident:** [RCA Template](RCA-Template.md)
+- **Practice:** [Incident Scenarios](Incident-Scenarios/README.md)
+
+---
+
+## 📝 Changelog
+
+| Date | Change |
+|------|--------|
+| 2026-11-16 | Severity scale converted to industry standard: **SEV-1 = most severe**, SEV-5 = informational (was SEV-4 = critical, SEV-0 = monitoring). Added ITIL P1–P5 mapping. Diagrams redrawn from editable sources, typos fixed. File names standardized. Back links added to every page. |
 
 ---
 
 ## 🤝 Contributions
 
-Pull requests are welcome.  
+Pull requests are welcome.
 Please ensure diagrams remain consistent with existing formatting and severity definitions.
 
 ---
 
 ## 📄 License
 
-This playbook is provided for operational use and training.  
-See LICENSE for details.
+This playbook is provided for operational use and training.

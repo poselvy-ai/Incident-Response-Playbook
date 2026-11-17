@@ -1,6 +1,8 @@
+[← Back to README](README.md)
+
 # Enterprise Communication Templates
 
-Standardized communication templates for SEV-2, SEV-3, and SEV-4 incidents.
+Standardized communication templates for SEV-1, SEV-2 and SEV-3 incidents (SEV-1 = most severe). Replace `SEV-X` with the current level from the [Severity Matrix](Severity-Matrix.md).
 
 ---
 
@@ -97,7 +99,7 @@ Standardized communication templates for SEV-2, SEV-3, and SEV-4 incidents.
 # 6. Executive Stakeholders
 
 ## Executive Briefing
-**Subject:** Critical Incident – Executive Summary (SEV-4)
+**Subject:** Critical Incident – Executive Summary (SEV-1)
 
 - Summary:
 - Business Risk:
@@ -154,3 +156,7 @@ Standardized communication templates for SEV-2, SEV-3, and SEV-4 incidents.
 - Customer-safe root cause:
 - Preventative actions:
 - Appreciation:
+
+---
+
+[← Back to README](README.md)

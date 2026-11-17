@@ -1,10 +1,12 @@
-#Application/API Outage (SEV‑4 → SEV‑2)
+[← Back to README](../README.md)
+
+# Application/API Outage (SEV-1 → SEV-3)
 Summary based on OP Lead decisions and incident actions
 
 ---
 
 ## Executive Summary
-A major outage impacted Acme’s API services due to a runaway database query originating from FINCO, a top financial enterprise customer. The query saturated CPU, exhausted the DB connection pool, and caused widespread HTTP 500 errors across all regions. The incident was escalated to SEV‑4 due to regulatory and contractual risk. The OP Lead coordinated DB, DevOps, Cloud, Compliance, and Executive Leadership to stabilize the platform by terminating the runaway query and applying rate limiters. All services recovered fully, and the incident was de‑escalated to SEV‑2 with an RCA scheduled within 24 hours.
+A major outage impacted Acme’s API services due to a runaway database query originating from FINCO, a top financial enterprise customer. The query saturated CPU, exhausted the DB connection pool, and caused widespread HTTP 500 errors across all regions. The incident was escalated to SEV-1 due to regulatory and contractual risk. The OP Lead coordinated DB, DevOps, Cloud, Compliance, and Executive Leadership to stabilize the platform by terminating the runaway query and applying rate limiters. All services recovered fully, and the incident was de-escalated to SEV-3 with an RCA scheduled within 24 hours.
 
 ---
 
@@ -21,22 +23,22 @@ A major outage impacted Acme’s API services due to a runaway database query or
 ---
 
 ## Initial Actions (OP Lead)
-- Declared **SEV‑3**
+- Declared **SEV-2**
 - Opened bridge
 - Notified DevOps, Network, DB, Cloud
 - Issued initial customer communication
-- Sent leadership notification with 15‑minute cadence
+- Sent leadership notification with 15-minute cadence
 
 ---
 
 ## Team Findings
 
 ### Database Team
-- Runaway query from **Tenant‑47 (FINCO)**
+- Runaway query from **Tenant-47 (FINCO)**
 - Full table scans without pagination
 - ~900 queries/sec
 - CPU saturation and connection pool exhaustion
-- Query confirmed **read‑only** (no corruption risk)
+- Query confirmed **read-only** (no corruption risk)
 
 ### DevOps
 - API containers restarting repeatedly
@@ -61,7 +63,7 @@ A major outage impacted Acme’s API services due to a runaway database query or
 
 ---
 
-## Escalation to SEV‑4
+## Escalation to SEV-1
 Due to:
 - FINCO being a top financial customer
 - Regulatory exposure
@@ -70,8 +72,8 @@ Due to:
 
 Actions:
 - Notified Executive Leadership and Compliance
-- Delivered SEV‑4 executive communication
-- Maintained 10‑minute cadence
+- Delivered SEV-1 executive communication
+- Maintained 10-minute cadence
 
 ---
 
@@ -102,3 +104,6 @@ Actions:
 - No data integrity issues reported
 - FINCO service restored
 
+---
+
+[← Back to Incident Scenarios](README.md) · [← Back to README](../README.md)

@@ -1,0 +1,11 @@
+flowchart TD
+    A["INCIDENT DETECTED<br/>Monitoring, alerts, customer reports, L1"] --> B["INCIDENT LOGGED<br/>Ticket created / case opened"]
+    B --> C["CATEGORIZATION & PRIORITY<br/>Impact + urgency → Severity Matrix input"]
+    C --> D["SEVERITY MATRIX DECISION<br/>SEV-1 (critical) → SEV-5 (informational)"]
+    D --> E["INITIAL DIAGNOSIS / TRIAGE (L1)<br/>Symptoms, affected systems, scope"]
+    E --> F["INVESTIGATION & DIAGNOSIS<br/>Technical teams engaged based on severity"]
+    F --> G["RESPONSE / MITIGATION<br/>Stabilize, contain, reduce impact"]
+    G --> H["RESOLUTION & RECOVERY<br/>Fix applied, service restored"]
+    H --> I["VALIDATION<br/>Systems healthy, no regression"]
+    I --> J["INCIDENT CLOSED<br/>Customers notified, documentation updated"]
+    J --> K["RCA / POST-INCIDENT<br/>Mandatory SEV-1, required SEV-2, optional SEV-3"]
